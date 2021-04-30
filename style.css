@@ -5,8 +5,7 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0;
-	padding-left: 40px;
-	padding-right: 0;
+	padding: 30px;
 	font-family:  'Alice', serif;
 	font-size: 18px;
 	line-height: 1.5;
@@ -147,6 +146,7 @@ footer a {
 	color: var(--tmava);
 	margin-top: 20px;
 	border-right: 2px solid var(--zluta);
+	align-self: start;
 }
 
 .palacinky p {
