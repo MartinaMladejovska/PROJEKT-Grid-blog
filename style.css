@@ -5,7 +5,8 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0;
-	padding: 30px;
+	padding-left: 40px;
+	padding-right: 0;
 	font-family:  'Alice', serif;
 	font-size: 18px;
 	line-height: 1.5;
@@ -34,6 +35,127 @@ blockquote {
 	--zelena: #a3cb38;
 	--limetka: #c4e538;
 }
+
+.blog {
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	column-gap: 40px;
+}
+
+h1 {
+	color: var(--zelena);
+	font-size: 90px;
+	margin: 60px 0;
+}
+
+h2 {
+	color: var(--zelena);
+	font-size: 60px;
+	margin: 20px 0;
+}
+
+header,
+p,
+h2,
+footer {
+	grid-column: 2 / 3;
+}
+
+.tip-vlevo {
+	grid-column: 1 / 2;
+}
+
+figure,
+blockquote {
+	grid-column: 1 / -1;
+}
+
+img {
+	max-width: 100%;
+}
+
+.meta {
+	color: var(--seda);
+	margin-bottom: 0;
+}
+
+.tip p {
+	background-color: var(--svetla);
+	padding: 20px;
+	font-size: 15px;
+	color: var(--tmava);
+	margin-top: 20px;
+}
+
+.tip-vlevo p {
+	border-right: 2px solid var(--zluta);
+	text-align: right;
+}
+
+.tip-vpravo p {
+	border-left: 2px solid var(--zluta);
+	text-align: left;
+}
+
+a {
+	color: var(--zluta);
+}
+
+figure {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 30px;
+}
+
+figcaption {
+	color: var(--seda);
+}
+
+blockquote {
+	text-align: center;
+	font-size: 30px;
+	color: var(--seda);
+	margin: 0;
+}
+
+blockquote::before,
+blockquote::after {
+	content:"";
+    background-color: var(--limetka);
+    width: 100px;
+    height: 2px;
+    display: block;
+    margin-top: 30px;
+	margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+	color: var(--seda);
+	font-size: 15px;
+}
+
+footer a {
+	color: var(--seda);
+}
+
+.palacinky {
+	background-color: var(--svetla);
+	padding: 20px;
+	font-size: 15px;
+	color: var(--tmava);
+	margin-top: 20px;
+	border-right: 2px solid var(--zluta);
+}
+
+.palacinky p {
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+	border: none;
+}
+
 
 /*
 	Všimni si, jak jsou zde nadefinované barvy.
